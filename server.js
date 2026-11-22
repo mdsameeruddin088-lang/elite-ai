@@ -1,5 +1,5 @@
 const http=require('http'),fs=require('fs');
-const F={'/':['index.html','text/html'],'/style.css':['style.css','text/css'],'/app.js':['app.js','text/javascript']};
+const F={'/':['index.html','text/html'],'/style.css':['style.css','text/css'],'/app.js':['app.js','text/javascript'],'/manifest.json':['manifest.json','application/manifest+json'],'/icon.svg':['icon.svg','image/svg+xml'],'/sw.js':['sw.js','text/javascript']};
 const SYS="You are Elite AI, a fast, private assistant running fully offline on the user's own device. Be clear, accurate and concise. Use Markdown for lists and code.";
 const O='http://127.0.0.1:11434';
 http.createServer(async(req,res)=>{
